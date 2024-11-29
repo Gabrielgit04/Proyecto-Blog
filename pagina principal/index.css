@@ -1,0 +1,223 @@
+/*Pagina principal desde aqui*/
+body{
+    
+    background-color: beige;
+    height: 120vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#search{
+    display: flex;
+    width: 70%;
+    height: 50px;
+    margin:20px 5px 20px 20px;
+    align-items: center;
+    justify-content: center;
+    border: solid darkcyan;
+    border-radius: 5px;
+    background-color: aliceblue;
+    text-align: center;    
+}
+.lupa{
+    border:solid darkcyan;
+    border-radius: 5px;
+    height: 50px;
+    width: 70px;
+    margin: 20px 0 0 0; 
+    background-color:aliceblue;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.lupa:hover{
+    background-color: rgba(0, 0, 0, 0.24);
+    transform:scale(0.9);
+    transition: .4s;
+}
+.lupa:active{
+    background-color:rgba(128, 128, 128, 0.685) ;
+    transform: scaleY(0.9) scaleX(0.7);
+}
+
+hr{color: rgba(0, 0, 0, 0.24);}
+
+.contenedor_search{
+    display: flex;
+    margin:0px;
+    
+
+}
+
+.contenedor{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            background-color:#f1f1c2;
+            box-sizing: border-box;
+
+}
+
+.contenedor_1{
+    flex-direction: row;
+    display: flex;
+    align-items:flex-start;
+}
+
+.contenedor_2{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 40px;
+    width: 230px;
+    margin: 0px 40px;
+    
+
+}
+.h1_pri{
+    display: flex;
+    margin:44px auto;
+    width: 200px;
+
+}
+
+
+.input_1{display: flex;
+      margin-left:20px;
+      margin-top: 120px;
+      
+      height: 30px;
+      width: 150px;
+      border: solid midnightblue;
+      border-radius: 20px;
+      text-align: center;
+      background-color: midnightblue;
+      color: aliceblue;
+      justify-content: center;
+      align-items: center;
+      font-size: medium;
+
+}
+
+.input_1:hover{
+    background-color: darkcyan;
+    color: black;
+    border: solid darkcyan;
+    transition: .4s;
+    
+}
+.input_1:active{
+    background-color: aliceblue;
+    color: rgb(6, 18, 71);
+    border: solid aliceblue;
+    transform:scale(0.9);
+}
+
+.ref{text-decoration: none;
+
+    }
+
+
+    .img_icon{
+        height: 110px;
+        width: 120px;
+    }
+
+    #button_menu{
+        display: none;
+    }
+
+    /*hasta aqui*/
+    
+    /*A partir de aqui es el menu*/
+
+    .line_btn{ 
+        display: flex;
+        justify-content: center;
+        margin:10px 5px 10px 30px;
+        align-items: center;
+        cursor:pointer;
+        
+    }
+    
+
+
+#button_menu:checked ~.menu{
+    opacity:1;
+    visibility: visible;
+    transition: .4s;
+}
+
+
+.menu{
+      position:absolute;
+      top: 0;
+      left: 0;
+      background:rgba(0,0,0,0.5) ;
+      width: 100%;
+      height: 150vh;
+      transition: all 500ms ease;
+      opacity: 0;
+      visibility: hidden;
+      
+}
+.cabecera_menu{
+         display: flex;
+         top: 10px;
+         justify-content: center;
+         flex-direction: column;
+         width: 300px;
+         height: 400x;
+         border-radius: 7px;
+         
+    }
+
+.contenido{
+    top: 120px;
+    width: 100%;
+    max-width: 300px;
+    background-color:lavenderblush;
+    height: 123.5vh;
+    position: relative;
+    transition: all 500ms ease;
+    align-items: start;
+    border: solid midnightblue;
+    border-radius: 10px;
+    
+
+}
+#button_menu:checked ~.menu.contenido{
+        transform: translateX(-100%);
+}
+.contenido nav{transform: translateY(0%);
+
+}
+
+.contenido nav a{
+    display: block;
+    color:aliceblue;
+    margin: 0px 0px 3px 0px;
+    padding: 30px;
+    text-decoration: none;
+    border-left:7px solid transparent;
+    transition: all 400ms ease;
+    background-color: midnightblue;
+    height: 50px;
+    font-size: 22px;
+
+    
+}
+
+.contenido nav a:hover{
+     border-left:10px rgb(212, 235, 11);
+     color: black;
+     background-color: darkcyan;
+     transition: .5s;
+
+}
+
+.contenido label{position: absolute;
+                 right: 6px;
+                 top: 10px;
+                 font-size: 30px;
+                 cursor: pointer;}
+
+/*hasta aca llega el menu estilos*/  
